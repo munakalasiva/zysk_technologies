@@ -1,0 +1,119 @@
+
+
+/* Feature Container */
+.fea-cont {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px; /* Add padding for mobile devices */
+  }
+  
+  /* Background */
+  .fea-bg {
+    width: 100%; /* Responsive width */
+    max-width: 1280px; /* Limit maximum width */
+    height: 160px;
+    padding: 0 16px; /* Adjust padding for better spacing */
+    gap: 32px;
+    background: #f9f9f9; /* Example background color */
+    border-radius: 8px; /* Optional: Rounded corners */
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  /* Heading */
+  .fea-hea {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    color: #101828;
+    margin-bottom: 16px;
+  }
+  
+  /* Paragraph */
+  .fea-para {
+    color: #475467;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  /* Card */
+  .fea-card {
+    text-align: center;
+    width: 100%; /* Default full width */
+    max-width: 384px; /* Restrict card width */
+    height: auto; /* Allow dynamic height */
+    padding: 16px; /* Add spacing within cards */
+    background: #ffffff; /* Example background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visual */
+    border-radius: 8px; /* Rounded corners */
+    gap: 20px;
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  /* Cards Container */
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    width: 100%; /* Full width by default */
+    max-width: 1280px; /* Restrict maximum width */
+    gap: 24px; /* Adjust gap for smaller screens */
+    margin: 0 auto; /* Center container */
+    opacity: 1; /* Ensure visibility */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .fea-bg {
+      height: auto; /* Allow background to adjust dynamically */
+      padding: 16px; /* Reduce padding for mobile */
+    }
+  
+    .fea-hea {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  
+    .fea-para {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
+  
+    .fea-card {
+      width: 100%; /* Full width for mobile */
+      margin: 0 0 16px; /* Add spacing between cards */
+    }
+  
+    .cards {
+      gap: 16px; /* Reduce gap for mobile view */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .fea-hea {
+      font-size: 16px;
+    }
+  
+    .fea-para {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .fea-card {
+      padding: 12px;
+    }
+  
+    .cards {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 12px;
+    }
+  }
+  
